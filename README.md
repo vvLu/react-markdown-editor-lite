@@ -1,4 +1,4 @@
-# react-markdown-editor-lite
+<!-- # react-markdown-editor-lite
 
 * A light-weight(size 66KB) Markdown editor of React component
 * Support TypeScript
@@ -182,5 +182,5 @@ Big thanks to [markdown-it](https://github.com/markdown-it/markdown-it) authors
 
 ## License
 
-[MIT](https://github.com/HarryChen0506/react-markdown-editor-lite/blob/master/LICENSE)
+[MIT](https://github.com/HarryChen0506/react-markdown-editor-lite/blob/master/LICENSE) -->
 

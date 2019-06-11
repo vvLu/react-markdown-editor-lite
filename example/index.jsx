@@ -79,9 +79,10 @@ class Demo extends React.Component {
             renderHTML={(text) => this.mdit.render(text)}
             config={{
               view: {
-                menu: true,
-                md: true,
-                html: true
+                menu: false,
+                md: false,
+                html: true,
+                toolbar: false
               },
               table: {
                 maxRow: 5,

@@ -1,5 +1,5 @@
 {
-  "name": "react-markdown-editor-lite",
+  "name": "rc-md",
   "version": "0.3.9",
   "description": "a light-weight Markdown editor based on markdown-it and React",
   "main": "./lib/index.js",
@@ -26,12 +26,12 @@
     "react",
     "component"
   ],
-  "author": "HarryChen",
+  "author": "Me",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarryChen0506/react-markdown-editor-lite/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/HarryChen0506/react-markdown-editor-lite#readme",
+  "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.0",

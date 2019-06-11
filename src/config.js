@@ -7,7 +7,8 @@ const config = {
   view: {
     menu: true,
     md: true,
-    html: true
+    html: true,
+    toolbar: true
   },
   logger: {
     interval: 3000

@@ -159,6 +159,7 @@ class MdEditor extends React.Component {
   }
 
   initConfig() {
+    console.log(_config, this.props.config)
     return { ..._config, ...this.props.config }
   }
 
@@ -538,7 +539,7 @@ class MdEditor extends React.Component {
       if (view.md) {
         res.push(
           <section className={'sec-md'} key="md">
-            <ToolBar>
+            {view.toolbar && <ToolBar>
               <span className="button" title={view.menu ? 'hidden menu' : 'show menu'} onClick={this.handleToggleMenu}>
                 {view.menu ? <Icon type="icon-chevron-up" /> : <Icon type="icon-chevron-down" />}
               </span>
@@ -546,7 +547,7 @@ class MdEditor extends React.Component {
                 {view.html ? <Icon type="icon-desktop" /> : <Icon type="icon-columns" />}
               </span>
               <span className="button" title={'toggle'} onClick={() => this.handleToggleView('md')}><Icon type="icon-refresh" /></span>
-            </ToolBar>
+            </ToolBar> }
             <textarea
               id="textarea"
               ref={node => this.nodeMdText = node}
@@ -561,9 +562,10 @@ class MdEditor extends React.Component {
           </section>)
       }
       if (view.html) {
+        console.log(view)
         res.push(
           <section className={'sec-html'} key="html">
-            <ToolBar style={{ right: '20px' }}>
+            {view.toolbar &&<ToolBar style={{ right: '20px' }}>
               <span className="button" title={view.menu ? 'hidden menu' : 'show menu'} onClick={this.handleToggleMenu}>
                 {view.menu ? <Icon type="icon-chevron-up" />
                   : <Icon type="icon-chevron-down" />
@@ -580,7 +582,7 @@ class MdEditor extends React.Component {
                   : <Icon type="icon-eye" />
                 }
               </span>
-            </ToolBar>
+            </ToolBar>}
             {htmlType === 'render' ?
               (<div className="html-wrap"
                 ref={node => this.nodeMdPreviewWraper = node}
